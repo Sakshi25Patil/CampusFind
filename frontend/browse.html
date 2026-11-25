@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items - CampusFind</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/browse.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Campus<span>Find</span></div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="browse.html" class="active">Browse Items</a>
+        <a href="report-lost.html">Report Lost</a>
+        <a href="report-found.html">Report Found</a>
+    </nav>
+</header>
+
+<main class="browse-page">
+
+    <section class="browse-heading">
+        <p class="welcome-label">CAMPUS LOST & FOUND</p>
+        <h1>Browse <span>Items</span></h1>
+        <p>Find lost belongings and explore items reported by students.</p>
+    </section>
+
+    <section class="search-section">
+        <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for an item..."
+        >
+    </section>
+
+    <section class="item-section">
+        <h2>Lost Items</h2>
+        <div class="items-container" id="lostItemsContainer">
+            <p>Lost items will appear here.</p>
+        </div>
+    </section>
+
+    <section class="item-section">
+        <h2>Found Items</h2>
+        <div class="items-container" id="foundItemsContainer">
+            <p>Found items will appear here.</p>
+        </div>
+    </section>
+
+</main>
+
+<script src="js/browse.js"></script>
+</body>
+</html>

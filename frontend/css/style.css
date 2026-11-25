@@ -1,0 +1,130 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #f97316;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 55px 20px 35px;
+    background-color: #f5f5f5;
+}
+
+.welcome-label {
+    color: #f97316;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.welcome-section h1 {
+    font-size: 38px;
+    color: #202020;
+    margin-bottom: 15px;
+}
+
+.welcome-section h1 span {
+    color: #f97316;
+}
+
+.welcome-section > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* College Campus Image */
+.campus-image-section {
+    width: 100%;
+    padding: 0 7% 40px;
+}
+
+.campus-image {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .welcome-section {
+        padding: 40px 18px 25px;
+    }
+
+    .welcome-section h1 {
+        font-size: 29px;
+    }
+
+    .campus-image-section {
+        padding: 0 18px 25px;
+    }
+
+    .campus-image {
+        height: 250px;
+    }
+}
